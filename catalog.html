@@ -6,17 +6,21 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="header-navigation">
+     <div class="header-top">
         <a class="main-header-logo">
           <img href="index.html" src="img/index-logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
         </a>
-        <ul class="user-navigation">
-          <li class="find-link">Поиск по сайту</li>
+        <span class="find-link">Поиск по сайту</span>
+        <ul class="user-list">
           <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
           <li class="user-exit"></li>
+        </ul>
+        <ul>
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
+      </div>
+      <nav class="header-navigation">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог товаров</a></li> // на примере не выглядит нажатым, не стала добавлять другой класс
           <li><a href="delivery.html">Доставка</a></li>
@@ -47,14 +51,14 @@
               </a>
             </h3>
              <p class="catalog-item-image">
-               <a href="catalog-item.html">
-                 <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
-               </a>
+               <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
              </p>
              <p class="catalog-item-price">
                <b>500 руб.</b>
-               <a class="button-addtocart" href="#">В корзину</a> // не поняла как это работает кнопка же на изображении
-               <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               <div class="invisible-buttons">
+                 <a class="button-addtocart" href="#">В корзину</a>
+                 <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               </div>
              </p>
            </li>
 
@@ -71,8 +75,10 @@
              </p>
              <p class="catalog-item-price">
                <b>1500 руб.</b>
-               <a class="button-addtocart" href="#">В корзину</a> // не поняла как это работает кнопка же на изображении
-               <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               <div class="invisible-buttons">
+                 <a class="button-addtocart" href="#">В корзину</a>
+                 <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               </div>
              </p>
            </li>
 
@@ -89,8 +95,10 @@
              </p>
              <p class="catalog-item-price">
                <b>2500 руб.</b>
-               <a class="button-addtocart" href="#">В корзину</a>
-               <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               <div class="invisible-buttons">
+                 <a class="button-addtocart" href="#">В корзину</a>
+                 <a class="button-addtocompare" href="#">Добавить к сравнению</a>
+               </div>
              </p>
            </li>
 
@@ -115,7 +123,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <nav class="footer-navigation">
+      <div class="footer-top">
         <a class="main-footer-logo">
           <img src="img/index-footer-logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
         </a>
@@ -125,8 +133,8 @@
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
-      </nav>
-      <div class="footer-container">
+      </div>
+      <div class="footer-middle">
         <p class="footer-adress">
           г.Москва, ул. Строителей, 15
         </p>
@@ -137,10 +145,14 @@
         </ul>
         <p class="footer-phone">
           Тел. +7(495)495-95-95
+       </div>
+       <div class="footer-bottom">
         </p>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Инстаграм</a>
-        <a class="social-button" href="#">Твиттер</a>
+        <ul class="social-list">
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+        </ul>
         <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" width="40" height="40" alt="разработчик htmlacademy»"></a>
       </div>
     </footer>
