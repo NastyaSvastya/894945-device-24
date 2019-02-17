@@ -38,9 +38,48 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="catalog-form" action="https://echo.htmlacademy.ru" metod="get">
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                <label for="white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                <label for="red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="have-bluetooth" id="have" checked>
+               <label for="have">Есть</label>
+              </li>
+              <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="have-not-bluetooth" id="have-not">
+               <label for="have-not">Нет<label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button-form">Показать</button>
+        </form>
       </section>
-
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
         <ul class="catalog-list">
