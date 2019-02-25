@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог интернет-магазина Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,14 +18,14 @@
           <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
           <li class="user-exit"><a href="logout.html">Выйти</a></li>
         </ul>
-        <ul>
+        <ul class="user-button">
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
       </div>
       <nav class="header-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
+          <li class="nav-list"><a href="catalog.html">Каталог товаров</a>
            <ul class="submenu">
              <li><a href="#">Виртуальная реальность</a></li>
              <li><a href="#">Моноподы для селфи</a></li>
@@ -32,9 +35,9 @@
              <li><a href="#">Квадрокоптеры</a></li>
            </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="nav-list"><a href="delivery.html">Доставка</a></li>
+          <li class="nav-list"><a href="guarantee.html">Гарантия</a></li>
+          <li class="nav-list"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -43,50 +46,50 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="breadcrumbs-current"><a href="#">Моноподы для селфи</a></li>
       </ul>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2 class="filter-hidden">Фильтр:</h2>
         <form class="catalog-form" action="https://echo.htmlacademy.ru" metod="get">
           <fieldset>
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-color">
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
                 <label for="black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
                 <label for="white">Белый</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
                 <label for="blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
                 <label for="red">Красный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
                 <label for="pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="bluetooth-filter">
               <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="have-bluetooth" id="have" checked>
+               <input class="filter-input filter-input-radio" type="radio" name="bluetooth" value="have-bluetooth" id="have" checked>
                <label for="have">Есть</label>
               </li>
               <li class="filter-option">
-               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="have-not-bluetooth" id="have-not">
+               <input class="filter-input filter-input-radio" type="radio" name="bluetooth" value="have-not-bluetooth" id="have-not">
                <label for="have-not">Нет<label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="button-form">Показать</button>
+          <button type="submit button" class="button-form">Показать</button>
         </form>
       </section>
       <section class="catalog">
@@ -105,7 +108,7 @@
                <b>500 руб.</b>
              </p>
              <div class="invisible-buttons">
-               <a class="button-addtocart" href="#">В корзину</a>
+               <a class="button-addtocart button" href="#">В корзину</a>
                <a class="button-addtocompare" href="#">Добавить к сравнению</a>
              </div>
            </li>
@@ -125,7 +128,7 @@
                <b>1500 руб.</b>
              </p>
              <div class="invisible-buttons">
-               <a class="button-addtocart" href="#">В корзину</a>
+               <a class="button-addtocart button" href="#">В корзину</a>
                <a class="button-addtocompare" href="#">Добавить к сравнению</a>
              </div>
            </li>
@@ -145,7 +148,7 @@
                <b>2500 руб.</b>
              </p>
              <div class="invisible-buttons">
-               <a class="button-addtocart" href="#">В корзину</a>
+               <a class="button-addtocart button" href="#">В корзину</a>
                <a class="button-addtocompare" href="#">Добавить к сравнению</a>
              </div>
            </li>
@@ -165,7 +168,7 @@
                <b>4900 руб.</b>
              </p>
              <div class="invisible-buttons">
-               <a class="button-addtocart" href="#">В корзину</a>
+               <a class="button-addtocart button" href="#">В корзину</a>
                <a class="button-addtocompare" href="#">Добавить к сравнению</a>
              </div>
            </li>
@@ -181,7 +184,7 @@
           <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
           <li class="user-exit"><a href="logout.html">Выйти</a></li>
         </ul>
-        <ul>
+        <ul class="user-button-footer">
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>

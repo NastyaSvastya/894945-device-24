@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,14 +17,14 @@
          <ul class="user-list">
            <li class="user-link"><a href="login.html">Войти</a></li>
          </ul>
-         <ul>
+         <ul class="user-button">
            <li class="compare-link"><a href="compare.html">Сравнить</a></li>
            <li class="cart-link"><a href="cart.html">Корзина</a></li>
          </ul>
        </div>
         <nav class="header-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
+          <li class="nav-list"><a href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Моноподы для селфи</a></li>
@@ -31,9 +34,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="nav-list"><a href="delivery.html">Доставка</a></li>
+          <li class="nav-list"><a href="guarantee.html">Гарантия</a></li>
+          <li class="nav-list"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -67,7 +70,7 @@
         </p>
         <a href="#" ><img src="img/map.jpg" width="286" height="164" alt="Карта с местоположением офиса"></a>
         </section>
-        <a class="button">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
     </main>
     <footer class="main-footer">
       <div class="footer-top">
@@ -78,7 +81,7 @@
           <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
           <li class="user-exit"><a href="logout.html">Выйти</a></li>
         </ul>
-        <ul>
+        <ul class="user-button-footer">
           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
           <li class="cart-link"><a href="cart.html">Корзина</a></li>
         </ul>
@@ -118,8 +121,7 @@
         </p>
         <p class="info-input-form">
           <label for="leather">Текст письма:</label>
-          <textarea id="leather" type="text" name="leather" placeholder="В свободной форме"></textarea> // нужен ли здесь rows и cols?
-        </p>
+          <textarea id="leather" type="text" name="leather" placeholder="В свободной форме"></textarea>
         <button class="button-form" type="submit">Отправить</button>
       </form>
       <button class="popup-close" type="button">Закрыть</button>

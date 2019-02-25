@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "gilroy";
+    src: url("fonts/webfontkit-20190224-094359/gilroyextrabold-webfont.woff2") format("woff2"),
+         url("fonts/webfontkit-20190224-094359/gilroyextrabold-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "gilroy";
+    src: url("fonts/webfontkit-20190224-094514/gilroylight-webfont.woff2") format("woff2"),
+         url("fonts/webfontkit-20190224-094514/gilroylight-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: rgba(0,0,0,1);
+  text-transform: none;
+
+  background-color: rgba(255,255,255,1);
+}
+
+.popup-map,
+.popup-form,
+.visually-hidden {
+display: none
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-size: 15px;
+  line-height: 30px;
+  color: rgba(0,0,0,1);
+  background-color: rgba(247,226,150,1);
+}
+
+.user-list,
+.user-button,
+.site-navigation,
+.submenu,
+.user-list-footer,
+.user-button-footer,
+.footer-container-navigation,
+.social-list,
+.breadcrumbs,
+.filter-color,
+.bluetooth-filter,
+.catalog-list {
+ list-style: none;
+}
+.user-list a,
+.user-button a,
+.site-navigation a,
+.submenu a,
+.partners a,
+.user-list-footer a,
+.user-button-footer a,
+.footer-container-navigation a,
+.social-list a,
+.catalog-list a,
+.button {
+  color: rgba(0,0,0,1)}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.302);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.find-link {
+  color: rgba(0, 0, 0, 0.302)}
+
+.find-link:hover {
+  color: rgba(0, 0, 0, 0.6)}
+
+.find-link:focus {
+  color: rgba(0, 0, 0, 1)}
+
+.user-list a:hover,
+.user-button a:hover,
+.site-navigation a:hover {
+  color: rgba(0, 0, 0, 0.6)}
+
+.user-list a:focus,
+.user-button a:focus,
+.site-navigation a:focus,
+.button:focus {
+  color: rgba(0, 0, 0, 0.302)}
+
+.main-footer {
+  background-color: rgba(70, 70, 70, 1)}
+
+.footer-top a {
+  color: rgba(255, 255, 255, 0.702)
+}
+
+.footer-middle p,
+.footer-middle a,
+.footer-bottom a {
+  color: rgba(255, 255, 255, 1)
+}
+
+.footer-top a:hover {
+  color: rgba(255, 255, 255, 1)
+}
+
+.footer-top a:focus {
+  color: rgba(255, 255, 255, 0.302)
+  }
+
+.footer-middle a:hover,
+.footer-bottom a:hover {
+  color: rgba(255, 255, 255, 0.6)
+}
+
+.footer-middle a:focus,
+.footer-bottom a:focus {
+  color: rgba(255, 255, 255, 0.302)
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.102)
+}
+
+.invisible-buttons .button-addtocompare {
+  color: rgba(0, 0, 0, 0.502)
+}
+
+.invisible-buttons .button-addtocompare:hover {
+  color: rgba(0, 0, 0, 1)
+}
+
+.invisible-buttons .button-addtocompare:focus {
+  color: rgba(0, 0, 0, 0.2)
+}
+
+.filters {
+  background-color: rgba(238, 238, 238, 1)
+}
+
+.button-form {
+  font-family: "gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: rgba(0,0,0,0);
+    border: none
+}
+
+.button-forms button:focus {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.nav-list a{
+  font-family: "gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+
+  font-style: normal;
+  text-transform: uppercase;
+}
+.submenu a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: none;
+}
+h2,
+h1 {
+  font-family: "gilroy", sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.filter-hidden {
+  background-color: rgba(219, 219, 219, 1);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.partners li {
+font-family: "gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  font-style: normal;
+}
+
+.button {
+  font-family: "gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+
+.catalog-form legend {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy";
+  color: rgba(0, 0, 0, 1);
+  font-weight: 800;
+  text-align: left;
+}
+fieldset {
+  border:none
+}
+.catalog-form fieldset {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.catalog-item h3 {
+  font-family: "gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-item-price p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.button-addtocompare a {
+  font-size: 13px;
+  line-height: 20px;
+}
