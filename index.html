@@ -8,7 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <div class="container">
+      <header class="main-header">
       <div class="header-top">
          <a class="main-header-logo" href="index.html">
            <img href="index.html" src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
@@ -40,62 +41,71 @@
         </ul>
       </nav>
     </header>
+    </div>
     <main>
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <section class="slides-news">
-        <h2 class="visually-hidden">Новинки</h2>
-        <div class="slides-column-left">
-          <figure class="slides-content">
-            <a href="#"><img src="img/palka8m.jpg" alt="Селфи-палка"></a>
-          </figure>
+        <div class="slides-news container">
+          <div class="slides-column-left">
+            <h2 class="visually-hidden">Новинки</h2>
+              <figure class="pic-slides">
+                <a href="#"><img src="img/palka8m.jpg" alt="Селфи-палка"></a>
+              </figure>
+           </div>
+          <div class="slides-column-right">
+            <h3 class="slides-title">Делай селфи,
+              <br> как Бен Стиллер!
+            </h3>
+            <p>Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <div class="slides-wrapper">
+              <div class="slides-wrapper-buttons">
+                <a class="button-about button" href="about.html">Подробнее</a>
+                <div class="slides-buttons">
+                <button class="slides-button">
+                  <img src="img/slider-button-1.png" alt="Переключить на первый слайд">
+                </button>
+                <button class="slides-button">
+                  <img src="img/slider-button-2.png" alt="Переключить на второй слайд">
+                </button>
+                <button class="slides-button">
+                  <img src="img/slider-button-2.png" alt="Переключить на третий слайд">
+                </button>
+              </div>
+              </div>
+              <div class="advantages-list">
+                <ul>
+                  <li>
+                    <span class="advantage">8,5 м</span>
+                    <span class="advantage-value">Длина палки</span>
+                  </li>
+                  <li>
+                    <span class="advantage">5 кг</span>
+                    <span class="advantage-value">Вес палки</span>
+                  </li>
+                  <li>
+                    <span class="advantage">Карбон</span>
+                    <span class="advantage-value">Материал</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </div>
-        <div class="slides-column-right">
-          <h3 class="slides-title">Делай селфи, как Бен Стиллер!
-          </h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
-          <a class="button-about button" href="about.html">Подробнее</a>
-          <div class="slides-buttons">
-            <button class="slides-button">
-              <img src="img/slider-button-1.png" alt="Переключить на первый слайд">
-            </button>
-            <button class="slides-button">
-              <img src="img/slider-button-2.png" alt="Переключить на второй слайд">
-            </button>
-            <button class="slides-button">
-              <img src="img/slider-button-2.png" alt="Переключить на третий слайд">
-            </button>
-          </div>
-          <div class="advantages-list">
-            <ul>
-              <li>
-                <span class="advantage">8,5 м</span>
-                <span class="advantage-value">Длина палки</span>
-              </li>
-              <li>
-                <span class="advantage">5 кг</span>
-                <span class="advantage-value">Вес палки</span>
-              </li>
-              <li>
-                <span class="advantage">Карбон</span>
-                <span class="advantage-value">Материал</span>
-              </li>
-            </ul>
-          </div>
         </div>
       </section>
-      <section>
-        <ul class="popular-categories">
-          <li><a href="#"><img src="img/popular-1.png" alt="Виртуальная реальность">Виртуальная реальность</a></li>
-          <li><a href="#"><img src="img/popular-2.png" alt="Моноподы для селфи">Моноподы для селфи</a></li>
-          <li><a href="#"><img src="img/popular-3.png" alt="Экшн-камеры">Экшн-камеры</a></li>
-          <li><a href="#"><img src="img/popular-4.png" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
-          <li><a href="#"><img src="img/popular-5.png" alt="Умные часы">Умные часы</a></li>
-          <li><a href="#"><img src="img/popular-6.png" alt="Квадрокоптеры">Квадрокоптеры</a></li>
-        </ul>
-      </section>
-      <section class="about-services">
-        <div class="services column-right">
+        <section class="container">
+          <ul class="popular-categories">
+            <li><a class="virt-cat" href="#">Виртуальная реальность</a></li>
+            <li><a class="mono-cat" href="#">Моноподы для селфи</a></li>
+            <li><a class="cam-cat" href="#">Экшн-камеры</a></li>
+            <li><a class="fit-cat" href="#">Фитнес-браслеты</a></li>
+            <li><a class="smart-cat" href="#">Умные часы</a></li>
+            <li><a class="cvatro-cat" href="#">Квадрокоптеры</a></li>
+          </ul>
+        </section>
+      </div>
+      <section class="about-services container">
+        <div class="services-column-right">
           <button class="services-button button">
             Доставка
           </button>
@@ -106,71 +116,82 @@
             Кредит
           </button>
         </div>
-        <div class="services column-left">
+        <div class="services-column-left">
           <h2>Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
       </section>
-      <section class="logotypes">
+      <section class="logotypes container">
         <h2 class="visually-hidden">Бренды</h2>
         <ul>
           <li>
-            <a href="#"><img src="img/logo-1.jpg.png" alt="Бренд DJI"></a>
+            <a href="#"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-2.jpg.png" alt="Бренд Sp Gadgets"></a>
+            <a href="#"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-3.jpg.png" alt="Бренд GoPro"></a>
+            <a href="#"></a>
           </li>
           <li>
-            <a href="#"><img src="img/logo-4.jpg.png" alt="Бренд Vive"></a>
+            <a href="#"></a>
           </li>
         </ul>
-      <section class="about">
-          <h2 class="about-hidden">О нас</h2>
-          <p>
-             Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-          </p>
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки<br>
-            России! DIVICE работает со многими транспортными компаниями:
-          </p>
-          <ul class="partners">
-            <li>
-              Деловые линии
-            </li>
-            <li>
-              Автотрейдинг
-            </li>
-            <li>
-              ЖелДорЭкспедиция
-            </li>
-          </ul>
-          <a class="button-about button" href="about.html">Подробнее о нас</a>
       </section>
-      <section class="contacts">
+    <div class="about-container container">
+        <section class="about">
+            <h2 class="about-hidden">О нас</h2>
+            <p>
+               Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            </p>
+            <p>
+              Мы можем доставить ваш товар в самые отдаленные точки<br>
+              России! DIVICE работает со многими транспортными компаниями:
+            </p>
+            <ul class="partners">
+              <li>
+                Деловые линии
+              </li>
+              <li>
+                Автотрейдинг
+              </li>
+              <li>
+                ЖелДорЭкспедиция
+              </li>
+            </ul>
+            <a class="button-about button" href="about.html">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
         <h2 class="contacts-hidden">Контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <a href="#" ><img src="img/map.jpg" width="286" height="164" alt="Карта с местоположением офиса"></a>
-        </section>
         <a class="button-write button" href="#">Напишите нам</a>
-    </main>
+        </section>
+
+    </div>
+  </main>
+  <div class="background-footer">
     <footer class="main-footer">
+        <div class="container">
+          <div class="section-footer">
       <div class="footer-top">
-        <a class="main-footer-logo">
-          <img src="img/logo-footer.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
-        </a>
-        <ul class="user-list-footer">
-          <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
-          <li class="user-exit"><a href="logout.html">Выйти</a></li>
-        </ul>
-        <ul class="user-button-footer">
-          <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-          <li class="cart-link"><a href="cart.html">Корзина</a></li>
-        </ul>
+        <div>
+          <a class="main-footer-logo">
+            <img src="img/logo-footer.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
+          </a>
+        </div>
+        <div class="user-footer">
+          <ul class="user-list-footer">
+            <li class="user-link visually-hidden"><a href="login.html">Валентин Петухов</a></li>
+            <li class="user-exit"><a href="logout.html">Выйти</a></li>
+          </ul>
+          <ul class="user-button-footer">
+            <li class="compare-link"><a href="compare.html">Сравнить</a></li>
+            <li class="cart-link"><a href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-middle">
         <p class="footer-adress">
@@ -181,9 +202,12 @@
           <li><a href="guarantee.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        <div class="footer-container-phone">
         <p class="footer-phone">
           Тел. +7(495)495-95-95
         </p>
+       </div>
+        </div>
        </div>
        <div class="footer-bottom">
         <ul class="social-list">
@@ -191,9 +215,12 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
           <li><a class="social-button" href="#">Твиттер</a></li>
         </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/logo-html.svg" width="40" height="40" alt="разработчик htmlacademy»"></a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/logo-html.svg" width="40" height="40" alt="разработчик htmlacademy»">
+        </a>
+      </div>
       </div>
     </footer>
+  </div>
     <section class="popup-form">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
       <form class="popup-form_for_leather" action="https://echo.device.ru" method="post">
