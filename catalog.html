@@ -8,32 +8,38 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-     <div class="header-top">
-        <a class="main-header-logo" href="index.html">
-          <img href="index.html" src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
-        </a>
-        <span class="find-link">Поиск по сайту</span>
-        <ul class="user-list">
-          <li class="user-link"><a href="login.html">Валентин Петухов</a></li>
-          <li class="user-exit"><a href="logout.html">Выйти</a></li>
-        </ul>
-        <ul class="user-button">
-          <li class="compare-link"><a href="compare.html">Сравнить</a></li>
-          <li class="cart-link"><a href="cart.html">Корзина</a></li>
-        </ul>
-      </div>
-      <nav class="header-navigation">
+    <div class="container">
+      <header class="main-header">
+      <div class="header-top">
+         <a class="main-header-logo" href="index.html">
+           <img href="index.html" src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
+         </a>
+         <span class="find-link">Поиск по сайту</span>
+         <ul class="user-list">
+           <li class="user-link"><a href="login.html">Войти</a></li>
+         </ul>
+         <ul class="user-button">
+           <li class="compare-link"><a href="compare.html">Сравнить</a></li>
+           <li class="cart-link"><a href="cart.html">Корзина</a></li>
+         </ul>
+       </div>
+        <nav class="header-navigation">
         <ul class="site-navigation">
           <li class="nav-list"><a href="catalog.html">Каталог товаров</a>
-           <ul class="submenu">
-             <li><a href="#">Виртуальная реальность</a></li>
-             <li><a href="#">Моноподы для селфи</a></li>
-             <li><a href="#">Экшн-камеры</a></li>
-             <li><a href="#">Фитнес-браслеты</a></li>
-             <li><a href="#">Умные часы</a></li>
-             <li><a href="#">Квадрокоптеры</a></li>
-           </ul>
+            <div class="submenu">
+              <ul class="column-submenu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="column-submenu">
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul class="column-submenu">
+                <li><a href="#">Квадрокоптеры</a></li>
+              </UL>
+            </div>
           </li>
           <li class="nav-list"><a href="delivery.html">Доставка</a></li>
           <li class="nav-list"><a href="guarantee.html">Гарантия</a></li>
@@ -41,6 +47,7 @@
         </ul>
       </nav>
     </header>
+    </div>
     <main class="container">
       <h1 class="page-title title-catalog">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
