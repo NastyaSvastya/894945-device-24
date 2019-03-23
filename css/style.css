@@ -426,6 +426,7 @@ ul.footer-container-navigation{
 }
 a.main-footer-logo {
   margin-left: auto;
+  color: rgba(255, 198, 0, 1);
 }
 .user-footer {
   display: flex;
@@ -790,10 +791,10 @@ line-height: 0;
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
-  right:3px;
-  width: 3px;
-  height: 3px;
+  top: 2px;
+  right: 2px;
+  width: 4px;
+  height: 4px;
   background-color: transparent;
   border-radius: 100%;
   cursor: pointer;
@@ -899,17 +900,46 @@ a.button-write{
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  width: 260px;
+
   margin-top: 65px;
 }
-a.button-about:hover{
+a.button-about{
+  width: 220px;
+}
+a.button-write{
+  width: 220px;
+}
+a.button-about:hover,
+a.button-write:hover {
   background-color: rgba(240,197,46,1);
 }
-a.button-about:focus{
+a.button-about:focus,
+a.button-write:focus{
   background-color: rgba(240,197,46,1);
 }
 .contacts img {
   margin-top: 44px;
   height: 266px;
   width: 560px;
+}
+.user-exit a {
+  margin:0;
+  padding: 0;
+  padding-left: 26px;
+  position: relative;
+}
+li.user-exit{
+  margin: 0;
+  padding: 0;
+}
+.user-exit a::after {
+  content: "";
+  width: 16px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  background-image: url("../img/user-footer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
