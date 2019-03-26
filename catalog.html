@@ -9,14 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header-catalog main-header">
       <div class="header-top">
          <a class="main-header-logo" href="index.html">
-           <img href="index.html" src="img/logo.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
+           <img href="index.html" src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
          </a>
          <span class="find-link">Поиск по сайту</span>
          <ul class="user-list">
-           <li class="user-link"><a href="login.html">Войти</a></li>
+           <li class="user-link"><a href="#">Валентин Петухов</a></li>
+           <li class="user-link-out"><a href="#">Выйти</a></li>
          </ul>
          <ul class="user-button">
            <li class="compare-link"><a href="compare.html">Сравнить</a></li>
@@ -26,8 +27,8 @@
         <nav class="header-navigation">
         <ul class="site-navigation">
           <li class="nav-list catalog"><a class="catalog-button" href="catalog.html">Каталог товаров</a>
-            <div class="submenu">
-              <ul class="column-submenu">
+            <div class="submenu vissually-hidden">
+              <ul class="column-submenu vissually-hidden">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
@@ -76,7 +77,7 @@
                   </div>
                 </div>
                 <fieldset>
-                  <legend>Цвет</legend>
+                  <legend class="color">Цвет</legend>
                   <ul class="filter-color">
                     <li class="filter-option">
                       <input class="filter-input filter-input-checkbox visually-hidden-buttons" type="checkbox" name="black" id="black" checked>
@@ -100,8 +101,8 @@
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset>
-                  <legend>Bluetooth</legend>
+                <fieldset class="bluetooth-choese">
+                  <legend class="bluetooth">Bluetooth</legend>
                   <ul class="bluetooth-filter">
                     <li class="filter-option">
                      <input class="filter-input filter-input-radio visually-hidden-buttons" type="radio" name="bluetooth" value="have-bluetooth" id="have" checked>
@@ -196,7 +197,7 @@
                  <div class="items-wrapper">
                    <h3>
                      <a href="catalog-item-4.html">
-                       Селфи-палка "Следуй за мной"
+                       Селфи-палка <<Следуй за мной>>
                      </a>
                    </h3>
                    <p class="catalog-item-price">
@@ -213,8 +214,8 @@
               <span class="nav-catalog-span">Назад</span>
               <ul class="nav-catalog-list">
                 <li><a class="sorting-span" href="#">1</a></li></li>
-                <li><a class="sorting-span" href="#">2</a></li></li>
-                <li><a class="sorting-span" href="#">3</a></li></li>
+                <li><a class="sorting-span not-pusched-page" href="#">2</a></li></li>
+                <li><a class="sorting-span not-pusched-page" href="#">3</a></li></li>
               </ul>
               <span class="nav-catalog-span">Вперед</span>
             </div>
@@ -230,12 +231,12 @@
         <div class="footer-top">
           <div>
             <a class="main-footer-logo">
-              <img src="img/logo-footer.svg" width="200" height="50" alt="Логотип интернет-магазина «Девайс»">
+              <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
             </a>
           </div>
           <div class="user-footer">
             <ul class="user-list-footer">
-              <li class="user-link visually-hidden"><a href="login.html">Валентин Петухов</a></li>
+              <li class="user-link footer-exit"><a href="login.html">Валентин Петухов</a></li>
               <li class="user-exit"><a href="logout.html">Выйти</a></li>
             </ul>
             <ul class="user-button-footer">
@@ -255,7 +256,7 @@
           </ul>
           <div class="footer-container-phone">
           <p class="footer-phone">
-            Тел. +7(495)495-95-95
+            Тел.: +7 (495) 495-95-95
           </p>
          </div>
           </div>
@@ -266,7 +267,7 @@
             <li><a class="social-button" href="#"><img src="img/inst.svg" width="32" height="32" alt="инстаграм"></a></li>
             <li><a class="social-button" href="#"><img src="img/tvit.svg" width="32" height="32" alt="твиттер"></a></li>
           </ul>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/logo-html-footer.svg" width="40" height="40" alt="разработчик htmlacademy»">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/logo-html-footer.svg" width="27" height="35" alt="разработчик htmlacademy»">
           </a>
         </div>
         </div>
