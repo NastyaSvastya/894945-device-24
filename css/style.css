@@ -441,7 +441,6 @@ fieldset {
 .header-top {
   display: flex;
 }
-
 .user-list, .user-button {
   margin: 0;
   padding: 0;
@@ -456,7 +455,6 @@ fieldset {
 .find-link {
   width:540px;
   padding-left: 38px;
-}
 }
 .site-navigation {
   margin: 0;
@@ -673,6 +671,7 @@ height: 160px;
   top: -56px;
   left: -14px;
   justify-content: flex-end;
+  z-index: 1;
 }
 .slides-news.container::before {
   content: "";
@@ -684,6 +683,31 @@ height: 160px;
   background-image: url("../img/01.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: -1;
+}
+#slide2 > div::before {
+  content: "";
+  width: 198px;
+  height: 131px;
+  position: absolute;
+  top: 9px;
+  left: 961px;
+  background-image: url("../img/02.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+}
+#slide3 > div::before {
+  content: "";
+  width: 201px;
+  height: 131px;
+  position: absolute;
+  top: 9px;
+  left: 961px;
+  background-image: url("../img/03.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
 }
 .slides-news.container::after {
   content: "";
@@ -708,7 +732,7 @@ height: 160px;
   background-position: 0 0;
   z-index: -5;
 }
-.services-column-right::before{
+.services-column-right.slides-delivery::before{
   content: "";
   width: 136px;
   height: 164px;
@@ -716,6 +740,30 @@ height: 160px;
   top: 28px;
   left: 558px;
   background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -5;
+}
+.services-column-right.slides-warranty::before{
+  content: "";
+  width: 171px;
+  height: 194px;
+  position: absolute;
+  top: 28px;
+  left: 558px;
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -5;
+}
+.services-column-right.slides-credit::before{
+  content: "";
+  width: 156px;
+  height: 186px;
+  position: absolute;
+  top: 28px;
+  left: 558px;
+  background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: -5;
@@ -749,10 +797,22 @@ height: 160px;
   width: 560px;
 }
 .slides-column-right p {
+  margin: 0;
   margin-left: 8px;
-  margim: 0;
+
   margin-top: 19px;
   letter-spacing: 0.2px;
+  width: 484px;
+}
+#slide2 > div > div.slides-column-right > p {
+  width: 460px;
+}
+#slide3 > div > div.slides-column-right > p {
+  width: 480px;
+  z-index: 20
+}
+#slide3 > div > div.slides-column-right > h3 {
+width: 505px;
 }
 .slides-column-left {
   display: flex;
@@ -768,6 +828,7 @@ height: 160px;
   text-align: left;
   margin-left: 9px;
   margin-bottom: 0;
+  width: 400px;
 }
 .slides-wrapper {
   display: flex;
@@ -1042,6 +1103,7 @@ height: 160px;
   border: 1px solid black;
 }
 .first-slide,
+.second-slide,
 .submenu.vissually-hidden{
   display: none;
 }
@@ -1097,7 +1159,8 @@ button.submit-button{
   width: 200px;
 }
 button.services-button::after,
-button.submit-button::after {
+button.submit-button::after,
+label.services-button::after {
   content: "";
   display: block;
   top: -1px;
@@ -1110,6 +1173,9 @@ button.submit-button::after {
   background-position: center;
   width: 160px;
   z-index: -6;
+}
+label.services-button::after{
+  top: -10px;
 }
 div.about-services.decoration::after {
   left: 70%;
@@ -1150,7 +1216,7 @@ background-image: url("../img/layer6.png");
 }
 p.delivery {
   margin-top: 30px;
-  width: 475px;
+  width: 470px;
   letter-spacing: -0.1px;
 }
 p.delivery-right {
@@ -1574,6 +1640,8 @@ button.popup-close-map {
   outline: 0;
   border: 0;
   background-color: transparent;
+  width: 55px;
+  height: 55px;
 }
 button.popup-close-map::before {
   content: "";
@@ -1585,8 +1653,21 @@ button.popup-close-map::before {
   background-image: url("../img/modal-close.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.7;
+}
+button.popup-close-map:hover {
+  opacity: 0.9;
 }
 section.popup-map,
-section.popup-form {
-  display: none;
+section.popup-form,
+.slides-warranty,
+.slides-credit {
+ display: none;
+}
+div.services-column-right.slides-warranty > p {
+  margin: 0;
+  padding: 0;
+}
+div.services-column-right.slides-credit > p {
+  width: 443px;
 }
