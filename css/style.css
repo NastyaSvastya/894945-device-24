@@ -1636,7 +1636,7 @@ div.decoration-services.decoration {
 button.popup-close-map {
   position: absolute;
   top: 27px;
-  right: 345px;
+  right: 305px;
   outline: 0;
   border: 0;
   background-color: transparent;
@@ -1658,8 +1658,6 @@ button.popup-close-map::before {
 button.popup-close-map:hover {
   opacity: 0.9;
 }
-section.popup-map,
-section.popup-form,
 .slides-warranty,
 .slides-credit {
  display: none;
@@ -1670,4 +1668,78 @@ div.services-column-right.slides-warranty > p {
 }
 div.services-column-right.slides-credit > p {
   width: 443px;
+}
+.popup-form {
+  display: flex;
+  width: 999px;
+  height: 592px;
+  background: rgba(0, 0, 0, 0.4)
+}
+.popup-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 761px;
+  margin: auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+.info-input-form {
+  display: flex;
+  flex-direction: column;
+}
+.names-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.names-wrapper > .info-input-form {
+  width: 360px;
+}
+.names-wrapper > .info-input-form input {
+  height: 50px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0,1);
+}
+.popup-form textarea {
+  height: 156px;
+}
+.names-wrapper {
+  margin-bottom: 35px;
+}
+button.popup-close {
+  position: absolute;
+  top: -73px;
+  right: -88px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+}
+button.popup-close::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.7;
+}
+button.popup-close:hover {
+  opacity: 0.9;
+}
+.slides-warranty,
+.slides-credit {
+ display: none;
+}
+.popup-form input {
+  background-color: rgba(247, 247, 247, 1);
+}
+section.popup-form,
+section.popup-map {
+  display: none;
 }
