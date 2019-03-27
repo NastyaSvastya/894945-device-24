@@ -12,7 +12,7 @@
       <header class="main-header-catalog main-header">
       <div class="header-top">
          <a class="main-header-logo" href="index.html">
-           <img href="index.html" src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
+           <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина «Девайс»">
          </a>
          <span class="find-link">Поиск по сайту</span>
          <ul class="user-list">
@@ -63,7 +63,7 @@
           <div class="container main-section">
             <section class="filters">
               <h2 class="filter-hidden">Фильтр:</h2>
-              <form class="catalog-form" action="https://echo.htmlacademy.ru" metod="get">
+              <form class="catalog-form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="filter-range">
                   <span>Стоимость</span>
                   <div class="price-controls">
@@ -110,20 +110,20 @@
                     </li>
                     <li class="filter-option">
                      <input class="filter-input filter-input-radio visually-hidden-buttons" type="radio" name="bluetooth" value="have-not-bluetooth" id="have-not">
-                     <label class="label-radio" for="have-not">Нет<label>
+                     <label class="label-radio" for="have-not">Нет</label>
                     </li>
                   </ul>
                 </fieldset>
-                <button type="submit button" class="button-form submit-button button">Показать</button>
+                <button type="submit" class="button-form submit-button button">Показать</button>
               </form>
             </section>
             <section class="catalog">
             <div class="sorting">
               <span class="sorting-span">Сортировка:</span>
               <ul class="sorting-list">
-                <li><a class="sorting-link" href="#">По цене</a></li></li>
-                <li><a class="sorting-link" href="#">По типу</a></li></li>
-                <li><a class="sorting-link" href="#">По популярности</a></li></li>
+                <li><a class="sorting-link" href="#">По цене</a></li>
+                <li><a class="sorting-link" href="#">По типу</a></li>
+                <li><a class="sorting-link" href="#">По популярности</a></li>
               </ul>
               <ul class=sorting-arrow-list>
                 <li><a class="sorting-arrow" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="от меньшего к большему"></a></li>
@@ -133,7 +133,7 @@
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                  <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <img class="catalog-image-item" src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="items-wrapper">
                    <h3>
                      <a href="catalog-item.html">
@@ -145,12 +145,12 @@
                    </p>
                  </div>
                  <div class="invisible-buttons">
-                   <a class="button-addtocart button visually-hidden" href="#">В корзину</a>
-                   <a class="button-addtocompare visually-hidden" href="#">Добавить к сравнению</a>
+                   <a class="button-addtocart button" href="#">В корзину</a>
+                   <a class="button-addtocompare" href="#">Добавить к сравнению</a>
                  </div>
                </li>
-               <li class="catalog-item">
-                  <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+               <li class="catalog-item item-new">
+                  <img class="catalog-image-item" src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   <div class="items-wrapper wrap-container">
                    <h3>
                      <a href="catalog-item-2.html">
@@ -162,15 +162,15 @@
                    </p>
                 </div>
                  <div class="invisible-buttons">
-                   <a class="button-addtocart button visually-hidden" href="#">В корзину</a>
-                   <a class="button-addtocompare visually-hidden" href="#">Добавить к сравнению</a>
+                   <a class="button-addtocart button" href="#">В корзину</a>
+                   <a class="button-addtocompare" href="#">Добавить к сравнению</a>
                  </div>
                </li>
 
                <li class="catalog-item">
                  <p class="catalog-item-image">
                    <a href="catalog-item-3.html">
-                     <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                     <img class="catalog-image-item" src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                    </a>
                  </p>
                  <div class="items-wrapper">
@@ -184,20 +184,20 @@
                    </p>
                  </div>
                  <div class="invisible-buttons">
-                   <a class="button-addtocart button visually-hidden" href="#">В корзину</a>
-                   <a class="button-addtocompare visually-hidden" href="#">Добавить к сравнению</a>
+                   <a class="button-addtocart button" href="#">В корзину</a>
+                   <a class="button-addtocompare" href="#">Добавить к сравнению</a>
                  </div>
                </li>
                <li class="catalog-item">
                  <p class="catalog-item-image">
                    <a href="catalog-item-4.html">
-                     <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
+                     <img class="catalog-image-item" src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
                    </a>
                  </p>
                  <div class="items-wrapper">
                    <h3>
                      <a href="catalog-item-4.html">
-                       Селфи-палка <<Следуй за мной>>
+                       Селфи-палка &laquoСледуй за мной&raquo
                      </a>
                    </h3>
                    <p class="catalog-item-price">
@@ -205,19 +205,19 @@
                    </p>
                  </div>
                  <div class="invisible-buttons">
-                   <a class="button-addtocart button visually-hidden" href="#">В корзину</a>
-                   <a class="button-addtocompare visually-hidden" href="#">Добавить к сравнению</a>
+                   <a class="button-addtocart button" href="#">В корзину</a>
+                   <a class="button-addtocompare" href="#">Добавить к сравнению</a>
                  </div>
                </li>
             </ul>
             <div class="nav-catalog">
-              <span class="nav-catalog-span">Назад</span>
+              <a class="nav-catalog-link" href="#">Назад</a>
               <ul class="nav-catalog-list">
-                <li><a class="sorting-span" href="#">1</a></li></li>
-                <li><a class="sorting-span not-pusched-page" href="#">2</a></li></li>
-                <li><a class="sorting-span not-pusched-page" href="#">3</a></li></li>
+                <li><a class="sorting-span" href="#">1</a></li>
+                <li><a class="sorting-span not-pusched-page" href="#">2</a></li>
+                <li><a class="sorting-span not-pusched-page" href="#">3</a></li>
               </ul>
-              <span class="nav-catalog-span">Вперед</span>
+              <a class="nav-catalog-link" href="#">Вперед</a>
             </div>
           </section>
           </div>
@@ -267,7 +267,7 @@
             <li><a class="social-button" href="#"><img src="img/inst.svg" width="32" height="32" alt="инстаграм"></a></li>
             <li><a class="social-button" href="#"><img src="img/tvit.svg" width="32" height="32" alt="твиттер"></a></li>
           </ul>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru"><img src="img/logo-html-footer.svg" width="27" height="35" alt="разработчик htmlacademy»">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-footer.svg" width="27" height="35" alt="разработчик htmlacademy»">
           </a>
         </div>
         </div>
